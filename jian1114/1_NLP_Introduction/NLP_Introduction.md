@@ -33,19 +33,19 @@
 2. 임베딩(Embedding)<br>
 : 컴퓨터가 자연어 자체를 해석할 수 없기 때문에 수로 표현해주는 과정<br>
     * One-Hot Encoding<br>
-    <img src='one_hot.png' width=50%><br>
+    <img src='./img/one_hot.png' width=50%><br>
     
 
     * TF-IDF<br>
     : 문서별 형태소 중요도 계산 <br>
     : 모든 문서에 자주 나오는 형태소는 중요도가 낮고, 특정 문서들에만 집중되는 형태소는 중요도가 높다는 가정<br>
-    <img src='formula.png' width=50%><br> 
+    <img src='./img/formula.png' width=50%><br> 
         * TF matrix: 빈도수<br>
-        <img src='tf_matrix.png' width=50%><br>
+        <img src='./img/tf_matrix.png' width=50%><br>
             
 
         * TF-IDF matrix<br>
-        <img src='tf_idf_matrix.png' width=50%><br>
+        <img src='./img/tf_idf_matrix.png' width=50%><br>
         : TF matrix와 공식을 통해 계산된 matrix<br>
     
         -> 단점<br>
@@ -57,10 +57,10 @@
         * 문장 수준: BERT, GPT 등
     
     * Word2Vec<br>
-    <img src='w2v_1.png' width=50%><br>
+    <img src='./img/w2v_1.png' width=50%><br>
     나라와 도시에 해당하는 단어만 가져와서 임베딩 시킨 벡터를 PCA를 통해 2차원 축소를 하여 시각화 한 결과, 나라-수도로 묶인 것을 볼 수 있음<br>
 
-        <img src='w2v_2.png' width=50%><br>
+        <img src='./img/w2v_2.png' width=50%><br>
     사랑, 이별에 대한 임베딩 된 벡터를 더한 다음 해당 벡터와 가장 가까운 값을 가지는 벡터에 해당하는 단어를 확인했을 때, 추억이 나온 것을 확인할 수 있음<br>
     즉, 자연어 간의 연산이 가능하게끔 만들어 줌<br><br>
         * CBOW<br>
@@ -68,7 +68,7 @@
 
         * Skip-Gram<br>
         : 중심단어 -> 주변단어 예측<br>
-        <img src='cbow_skip_gram.png' width=50%><br><br>
+        <img src='./img/cbow_skip_gram.png' width=50%><br><br>
         
         <strong>N-Gram이란?</strong><br>
         : 문장 내의 형태소들을 n개의 단위로 묶은 것<br>
@@ -81,7 +81,7 @@
         * 목표변수 y에 영향을 준다고 판단되는 x 벡터와 오차가 있다고 가정<br>
         * 각각의 x가 y에 영향을 어느정도 주는지에 대한 정보를 담은 가중치 beta가 있다고 가정<br>
         * 이 정보들을 가지고 예측한 y를 sigmoid 함수를 통해 0~1 사이의 값으로 변환<br>
-        <img src='perceptron.png' width=50%><br><br>
+        <img src='./img/perceptron.png' width=50%><br><br>
     * 이러한 방식을 이용해서 학습하는 인공신경망 모델을 Skip-Gram<br>
-    <img src='skip_gram.png' width=50%><br><br>
+    <img src='./img/skip_gram.png' width=50%><br><br>
 
