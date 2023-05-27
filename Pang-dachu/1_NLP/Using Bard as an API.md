@@ -54,7 +54,7 @@ Bard의 API는 공식적인 것이 아니므로 API Key 역할을 하는 부분�
 찾아야 할 값은 *Secur-1PSID 이다.*
 
 <img
-    src = "img_file/apikey_img.png"
+    src = "../img_file/apikey_img.png"
     width = "600"
     height = "400">
 
@@ -113,7 +113,7 @@ use_bard()["content"]
 Chat GPT API의 경우 하나의 답변이 돌아오지만 Bard의 경우 여러개의 답변이 돌아온다. 
 
 <img
-    src = "img_file/bard_result.png"
+    src = "../img_file/bard_result.png"
     width = "600"
     height = "300">
 
